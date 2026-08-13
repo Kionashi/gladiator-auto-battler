@@ -1,9 +1,13 @@
 [gd_scene format=3 uid="uid://fh5qmbxfc2s3"]
 
 [ext_resource type="PackedScene" uid="uid://bfneaa62bjw3k" path="res://scenes/gladiator.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://bg3ehupgxx1wi" path="res://scenes/weapon.tscn" id="2_0wfyh"]
 
 [node name="main" type="Node2D" unique_id=1928375813]
 position = Vector2(309, 368)
 
-[node name="Node2D" parent="." unique_id=1402158882 instance=ExtResource("1_o5qli")]
-position = Vector2(233, 169)
+[node name="gladiator" parent="." unique_id=764551868 instance=ExtResource("1_o5qli")]
+position = Vector2(74, 145)
+
+[node name="weapon" parent="." unique_id=1935156997 instance=ExtResource("2_0wfyh")]
+position = Vector2(400, 18)

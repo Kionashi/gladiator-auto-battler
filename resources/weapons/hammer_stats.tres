@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="WeaponStats" format=3 uid="uid://c7locbv4op8ym"]
+
+[ext_resource type="Script" uid="uid://rawe83m68bjc" path="res://scripts/resources/weapon_stats.gd" id="1_ew6gf"]
+
+[resource]
+resource_name = "HammerStats"
+script = ExtResource("1_ew6gf")
+attack = 100.0
+attack_speed = 0.5
+defense = 50.0
+metadata/_custom_type_script = "uid://rawe83m68bjc"

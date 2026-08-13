@@ -2,27 +2,37 @@
 
 [ext_resource type="Script" uid="uid://dc0f4g8g2ch53" path="res://scripts/gladiator.gd" id="1_nbw0u"]
 [ext_resource type="Texture2D" uid="uid://ufvrq6ogns7r" path="res://assets/images/gladiator/unarmed.png" id="2_nbw0u"]
-[ext_resource type="Script" uid="uid://0let6majf71m" path="res://scripts/resources/character_stats.gd" id="2_xxhy4"]
-
-[sub_resource type="Resource" id="Resource_o5qli"]
-script = ExtResource("2_xxhy4")
-metadata/_custom_type_script = "uid://0let6majf71m"
+[ext_resource type="Resource" uid="uid://w335uxrj3n3g" path="res://resources/character_stats.tres" id="2_xxhy4"]
+[ext_resource type="Script" uid="uid://b5wqxyc42r5u" path="res://addons/drag_and_drop/resources/drop_behaviors/drop_behavior_reject.gd" id="3_smp8p"]
+[ext_resource type="Script" uid="uid://nj1hdjl1vob2" path="res://addons/drag_and_drop/scripts/drop_zone.gd" id="4_8boq4"]
+[ext_resource type="Script" uid="uid://djdmnemxrx7bg" path="res://addons/drag_and_drop/resources/draggable_types/draggable_type.gd" id="4_e2ibj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xxhy4"]
 size = Vector2(129, 229)
 
-[node name="Node2D" type="Node2D" unique_id=1402158882]
+[sub_resource type="Resource" id="Resource_8boq4"]
+script = ExtResource("3_smp8p")
+
+[sub_resource type="Resource" id="Resource_ny5vx"]
+script = ExtResource("4_e2ibj")
+
+[node name="gladiator" type="Area2D" unique_id=764551868]
 position = Vector2(589, 368)
-
-[node name="gladiator" type="Area2D" parent="." unique_id=1113267982]
-position = Vector2(5, -11)
 script = ExtResource("1_nbw0u")
-stats = SubResource("Resource_o5qli")
+stats = ExtResource("2_xxhy4")
 
-[node name="Sprite2D" type="Sprite2D" parent="gladiator" unique_id=1354819769]
-position = Vector2(2, -2)
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1354819769]
+position = Vector2(7, -13)
 texture = ExtResource("2_nbw0u")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="gladiator" unique_id=804124164]
-position = Vector2(5, -1)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=804124164]
+position = Vector2(10, -12)
 shape = SubResource("RectangleShape2D_xxhy4")
+
+[node name="DropZone" type="Node2D" parent="." unique_id=1068718654 node_paths=PackedStringArray("attach_spot")]
+script = ExtResource("4_8boq4")
+attach_spot = NodePath("..")
+drop_behavior = SubResource("Resource_8boq4")
+snap_style = 1
+accepted_draggable_types = Array[ExtResource("4_e2ibj")]([SubResource("Resource_ny5vx")])
+metadata/_custom_type_script = "uid://nj1hdjl1vob2"

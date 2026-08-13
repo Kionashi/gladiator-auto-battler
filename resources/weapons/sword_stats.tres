@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="WeaponStats" format=3 uid="uid://cay2br8aortt2"]
+
+[ext_resource type="Script" uid="uid://rawe83m68bjc" path="res://scripts/resources/weapon_stats.gd" id="1_ghhii"]
+
+[resource]
+resource_name = "SwordStats"
+script = ExtResource("1_ghhii")
+attack = 50.0
+attack_speed = 1.0
+defense = 100.0
+metadata/_custom_type_script = "uid://rawe83m68bjc"

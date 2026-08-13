@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="WeaponStats" format=3 uid="uid://cu5l6eq67wdpa"]
+
+[ext_resource type="Script" uid="uid://rawe83m68bjc" path="res://scripts/resources/weapon_stats.gd" id="1_l0joa"]
+
+[resource]
+resource_name = "DaggerStats"
+script = ExtResource("1_l0joa")
+attack = 25.0
+attack_speed = 2.0
+defense = 50.0
+metadata/_custom_type_script = "uid://rawe83m68bjc"
