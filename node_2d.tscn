@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://b61urnrkm1edp"]
+
+[ext_resource type="Script" uid="uid://dc0f4g8g2ch53" path="res://scripts/gladiator.gd" id="1_epypp"]
+[ext_resource type="Texture2D" uid="uid://ufvrq6ogns7r" path="res://assets/images/gladiator/unarmed.png" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://c621kgatanb2f" path="res://assets/images/weapons/sword.png" id="2_0e48y"]
+[ext_resource type="Script" uid="uid://crmnw3ldr3xev" path="res://addons/drag_and_drop/scripts/draggable.gd" id="3_q6r6c"]
+[ext_resource type="Script" uid="uid://djdmnemxrx7bg" path="res://addons/drag_and_drop/resources/draggable_types/draggable_type.gd" id="4_kdubu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8w0r3"]
+size = Vector2(129, 229)
+
+[sub_resource type="Resource" id="Resource_d21ai"]
+script = ExtResource("4_kdubu")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h4t55"]
+size = Vector2(93, 185)
+
+[node name="main" type="Node2D" unique_id=1928375813]
+position = Vector2(309, 368)
+
+[node name="gladiator" type="Area2D" parent="." unique_id=1566867715]
+script = ExtResource("1_epypp")
+
+[node name="Sprite2D" type="Sprite2D" parent="gladiator" unique_id=193429717]
+texture = ExtResource("1_wtcfe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="gladiator" unique_id=1154926764]
+position = Vector2(-0.5, 1.5)
+shape = SubResource("RectangleShape2D_8w0r3")
+
+[node name="sword" type="Area2D" parent="." unique_id=1110220571]
+position = Vector2(583, 0)
+scale = Vector2(0.65, 0.65)
+
+[node name="Draggable" type="Node" parent="sword" unique_id=706359712]
+script = ExtResource("3_q6r6c")
+type = SubResource("Resource_d21ai")
+metadata/_custom_type_script = "uid://crmnw3ldr3xev"
+
+[node name="Sprite2D" type="Sprite2D" parent="sword" unique_id=829717144]
+texture_filter = 1
+texture = ExtResource("2_0e48y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sword" unique_id=1262144696]
+position = Vector2(-0.5, 3.5)
+shape = SubResource("RectangleShape2D_h4t55")

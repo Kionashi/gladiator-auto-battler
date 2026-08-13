@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bfneaa62bjw3k"]
+
+[ext_resource type="Script" uid="uid://dc0f4g8g2ch53" path="res://scripts/gladiator.gd" id="1_nbw0u"]
+[ext_resource type="Texture2D" uid="uid://ufvrq6ogns7r" path="res://assets/images/gladiator/unarmed.png" id="2_nbw0u"]
+[ext_resource type="Script" uid="uid://0let6majf71m" path="res://scripts/resources/character_stats.gd" id="2_xxhy4"]
+
+[sub_resource type="Resource" id="Resource_o5qli"]
+script = ExtResource("2_xxhy4")
+metadata/_custom_type_script = "uid://0let6majf71m"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xxhy4"]
+size = Vector2(129, 229)
+
+[node name="Node2D" type="Node2D" unique_id=1402158882]
+position = Vector2(589, 368)
+
+[node name="gladiator" type="Area2D" parent="." unique_id=1113267982]
+position = Vector2(5, -11)
+script = ExtResource("1_nbw0u")
+stats = SubResource("Resource_o5qli")
+
+[node name="Sprite2D" type="Sprite2D" parent="gladiator" unique_id=1354819769]
+position = Vector2(2, -2)
+texture = ExtResource("2_nbw0u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="gladiator" unique_id=804124164]
+position = Vector2(5, -1)
+shape = SubResource("RectangleShape2D_xxhy4")
