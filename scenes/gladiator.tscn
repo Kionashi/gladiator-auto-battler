@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://dc0f4g8g2ch53" path="res://scripts/gladiator.gd" id="1_nbw0u"]
 [ext_resource type="Texture2D" uid="uid://ufvrq6ogns7r" path="res://assets/images/gladiator/unarmed.png" id="2_nbw0u"]
-[ext_resource type="Resource" uid="uid://w335uxrj3n3g" path="res://resources/character_stats.tres" id="2_xxhy4"]
 [ext_resource type="Script" uid="uid://b5wqxyc42r5u" path="res://addons/drag_and_drop/resources/drop_behaviors/drop_behavior_reject.gd" id="3_smp8p"]
 [ext_resource type="Script" uid="uid://nj1hdjl1vob2" path="res://addons/drag_and_drop/scripts/drop_zone.gd" id="4_8boq4"]
 [ext_resource type="Script" uid="uid://djdmnemxrx7bg" path="res://addons/drag_and_drop/resources/draggable_types/draggable_type.gd" id="4_e2ibj"]
@@ -17,9 +16,7 @@ script = ExtResource("3_smp8p")
 script = ExtResource("4_e2ibj")
 
 [node name="gladiator" type="Area2D" unique_id=764551868]
-position = Vector2(589, 368)
 script = ExtResource("1_nbw0u")
-stats = ExtResource("2_xxhy4")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1354819769]
 position = Vector2(7, -13)
@@ -36,3 +33,12 @@ drop_behavior = SubResource("Resource_8boq4")
 snap_style = 1
 accepted_draggable_types = Array[ExtResource("4_e2ibj")]([SubResource("Resource_ny5vx")])
 metadata/_custom_type_script = "uid://nj1hdjl1vob2"
+
+[node name="Label" type="Label" parent="." unique_id=45015613]
+offset_left = -73.0
+offset_top = -171.0
+offset_right = 89.0
+offset_bottom = -134.0
+theme_override_font_sizes/font_size = 27
+text = "Dinomonino"
+horizontal_alignment = 1

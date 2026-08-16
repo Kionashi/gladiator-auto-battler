@@ -1,12 +1,18 @@
-[gd_resource type="Resource" script_class="WeaponStats" format=3 uid="uid://bbyjfk33p87rw"]
+[gd_resource type="Resource" script_class="WeaponData" format=3 uid="uid://bbyjfk33p87rw"]
 
-[ext_resource type="Script" uid="uid://rawe83m68bjc" path="res://scripts/resources/weapon_stats.gd" id="1_l3abj"]
+[ext_resource type="Texture2D" uid="uid://xr54rsmb56ks" path="res://assets/images/gladiator/spearman.png" id="1_itco3"]
+[ext_resource type="Script" uid="uid://rawe83m68bjc" path="res://scripts/resources/weapon_data.gd" id="1_l3abj"]
+[ext_resource type="Texture2D" uid="uid://cim7pm87psaq" path="res://assets/images/weapons/spear.png" id="2_cxw33"]
 
 [resource]
 resource_name = "SpearStats"
 script = ExtResource("1_l3abj")
+name = "spear"
 attack = 40.0
 attack_speed = 1.0
 defense = 100.0
 reach = true
+inventory_texture = ExtResource("2_cxw33")
+gladiator_texture = ExtResource("1_itco3")
+damage_type = 2
 metadata/_custom_type_script = "uid://rawe83m68bjc"

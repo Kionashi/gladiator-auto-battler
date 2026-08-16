@@ -1,11 +1,17 @@
-[gd_resource type="Resource" script_class="WeaponStats" format=3 uid="uid://c7locbv4op8ym"]
+[gd_resource type="Resource" script_class="WeaponData" format=3 uid="uid://c7locbv4op8ym"]
 
-[ext_resource type="Script" uid="uid://rawe83m68bjc" path="res://scripts/resources/weapon_stats.gd" id="1_ew6gf"]
+[ext_resource type="Texture2D" uid="uid://6ptkt0jynpkq" path="res://assets/images/gladiator/hammerman.png" id="1_btlr4"]
+[ext_resource type="Script" uid="uid://rawe83m68bjc" path="res://scripts/resources/weapon_data.gd" id="1_ew6gf"]
+[ext_resource type="Texture2D" uid="uid://dhx47n0catnty" path="res://assets/images/weapons/hammer.png" id="2_f3rqp"]
 
 [resource]
 resource_name = "HammerStats"
 script = ExtResource("1_ew6gf")
+name = "hammer"
 attack = 100.0
 attack_speed = 0.5
 defense = 50.0
+inventory_texture = ExtResource("2_f3rqp")
+gladiator_texture = ExtResource("1_btlr4")
+damage_type = 1
 metadata/_custom_type_script = "uid://rawe83m68bjc"

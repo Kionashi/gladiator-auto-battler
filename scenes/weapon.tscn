@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://bs3jybvvwi3i4" path="res://scripts/weapon.gd" id="1_8fp1k"]
 [ext_resource type="Script" uid="uid://crmnw3ldr3xev" path="res://addons/drag_and_drop/scripts/draggable.gd" id="1_bmw2d"]
 [ext_resource type="Script" uid="uid://djdmnemxrx7bg" path="res://addons/drag_and_drop/resources/draggable_types/draggable_type.gd" id="2_8fp1k"]
-[ext_resource type="Resource" uid="uid://bbyjfk33p87rw" path="res://resources/weapons/spear_stats.tres" id="2_cjr6y"]
 [ext_resource type="Texture2D" uid="uid://c621kgatanb2f" path="res://assets/images/weapons/sword.png" id="3_cjr6y"]
 
 [sub_resource type="Resource" id="Resource_xrduv"]
@@ -13,9 +12,7 @@ script = ExtResource("2_8fp1k")
 size = Vector2(93, 185)
 
 [node name="weapon" type="Area2D" unique_id=1935156997]
-position = Vector2(535, 358)
 script = ExtResource("1_8fp1k")
-weapon_stats = ExtResource("2_cjr6y")
 
 [node name="Draggable" type="Node" parent="." unique_id=55187912]
 script = ExtResource("1_bmw2d")

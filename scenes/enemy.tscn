@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://8xcfeafnf0f3"]
+
+[ext_resource type="Texture2D" uid="uid://bwrg7l0yariwu" path="res://assets/images/monsters/goblin.png" id="1_7p1mj"]
+[ext_resource type="Script" uid="uid://bk0nmfjr2exfn" path="res://scripts/enemy.gd" id="1_md0e3"]
+[ext_resource type="Resource" uid="uid://df0g43m71xfo0" path="res://resources/enemies/ogre.tres" id="2_4ra3w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8w0r3"]
+size = Vector2(196, 179)
+
+[node name="enemy" type="Area2D" unique_id=115452098]
+script = ExtResource("1_md0e3")
+enemy_data = ExtResource("2_4ra3w")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1574908044]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_7p1mj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1767055476]
+position = Vector2(0, 2.5)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("RectangleShape2D_8w0r3")
+
+[node name="Label" type="Label" parent="." unique_id=596114174]
+offset_left = -37.0
+offset_top = -117.0
+offset_right = 37.0
+offset_bottom = -94.0
+text = "Dinotron "
+
+[node name="Timer" type="Timer" parent="." unique_id=1463036736]
+autostart = true

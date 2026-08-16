@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://df0g43m71xfo0"]
+
+[ext_resource type="Script" uid="uid://mrp20grfeolu" path="res://scripts/resources/enemy_data.gd" id="1_5mrol"]
+[ext_resource type="Texture2D" uid="uid://fy6p3s6pdwva" path="res://assets/images/monsters/ogre.png" id="2_l4sh8"]
+
+[resource]
+script = ExtResource("1_5mrol")
+max_health = 500.0
+attack = 50.0
+defense = 150.0
+texture = ExtResource("2_l4sh8")
+name = "Ogre"
+size = 2
+metadata/_custom_type_script = "uid://mrp20grfeolu"

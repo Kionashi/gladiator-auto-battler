@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://bofaj0j4ebmqo"]
+
+[ext_resource type="Script" uid="uid://mrp20grfeolu" path="res://scripts/resources/enemy_data.gd" id="1_qvybl"]
+[ext_resource type="Texture2D" uid="uid://c1ge2sjbkirmw" path="res://assets/images/monsters/skeleton-warrior.png" id="2_mkdsv"]
+
+[resource]
+script = ExtResource("1_qvybl")
+defense = 80.0
+weakness = 1
+texture = ExtResource("2_mkdsv")
+name = "Skeleton Warrior"
+size = 1
+metadata/_custom_type_script = "uid://mrp20grfeolu"

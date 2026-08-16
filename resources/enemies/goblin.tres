@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://dq7ntlixgjjp8"]
+
+[ext_resource type="Script" uid="uid://mrp20grfeolu" path="res://scripts/resources/enemy_data.gd" id="1_8t8dg"]
+[ext_resource type="Texture2D" uid="uid://bwrg7l0yariwu" path="res://assets/images/monsters/goblin.png" id="2_bxi3o"]
+
+[resource]
+script = ExtResource("1_8t8dg")
+max_health = 30.0
+attack_speed = 5.0
+texture = ExtResource("2_bxi3o")
+name = "Goblin"
+metadata/_custom_type_script = "uid://mrp20grfeolu"

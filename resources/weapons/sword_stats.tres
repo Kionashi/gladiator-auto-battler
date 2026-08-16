@@ -1,11 +1,16 @@
-[gd_resource type="Resource" script_class="WeaponStats" format=3 uid="uid://cay2br8aortt2"]
+[gd_resource type="Resource" script_class="WeaponData" format=3 uid="uid://cay2br8aortt2"]
 
-[ext_resource type="Script" uid="uid://rawe83m68bjc" path="res://scripts/resources/weapon_stats.gd" id="1_ghhii"]
+[ext_resource type="Script" uid="uid://rawe83m68bjc" path="res://scripts/resources/weapon_data.gd" id="1_ghhii"]
+[ext_resource type="Texture2D" uid="uid://c8syghomhnltd" path="res://assets/images/gladiator/swordman.png" id="1_rkp3m"]
+[ext_resource type="Texture2D" uid="uid://c621kgatanb2f" path="res://assets/images/weapons/sword.png" id="2_j71lw"]
 
 [resource]
 resource_name = "SwordStats"
 script = ExtResource("1_ghhii")
+name = "sword"
 attack = 50.0
 attack_speed = 1.0
 defense = 100.0
+inventory_texture = ExtResource("2_j71lw")
+gladiator_texture = ExtResource("1_rkp3m")
 metadata/_custom_type_script = "uid://rawe83m68bjc"
