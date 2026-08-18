@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ovrvk07xu70b"]
+
+[ext_resource type="Script" uid="uid://bginn45qmdc88" path="res://scenes/battle.gd" id="1_dn72j"]
+
+[node name="Node2D" type="Node2D" unique_id=163293467]
+script = ExtResource("1_dn72j")
+
+[node name="Gladiators" type="Node2D" parent="." unique_id=410740121]
+
+[node name="Enemies" type="Node2D" parent="." unique_id=2039208289]

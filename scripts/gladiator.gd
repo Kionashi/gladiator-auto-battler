@@ -6,6 +6,8 @@ extends Area2D
 @onready var drop_zone: DropZone = $DropZone
 @onready var label: Label = $Label
 
+var gladiator_name: String
+
 const GLADIATOR_NAMES = [
 	"Brutus",
 	"Cassius",
@@ -26,6 +28,7 @@ const GLADIATOR_NAMES = [
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	
 	if (!character_data):
 		print('NO CHARACTER DATA')
 	label.text = GLADIATOR_NAMES.pick_random()
@@ -35,6 +38,7 @@ func _ready() -> void:
 		drop_zone.drop_accepted.connect(_on_drop_accepted)
 	else:
 		print('no drop zone')
+	gladiator_name = label.text
 
 func _on_drop_accepted(zone: DropZone, area: Area2D, plan: DropPlan) -> void:
 	print('drop accepted')

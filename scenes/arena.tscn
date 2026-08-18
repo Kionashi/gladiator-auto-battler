@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://byusjj8xlifna"]
+
+[ext_resource type="Script" uid="uid://cqik0yank4jd1" path="res://scenes/arena.gd" id="1_e05a3"]
+[ext_resource type="PackedScene" uid="uid://bfneaa62bjw3k" path="res://scenes/gladiator.tscn" id="2_7ft05"]
+[ext_resource type="Resource" uid="uid://h4yygc1ujdyj" path="res://resources/character_data.tres" id="3_4ag8t"]
+[ext_resource type="PackedScene" uid="uid://8xcfeafnf0f3" path="res://scenes/enemy.tscn" id="4_dpxgc"]
+[ext_resource type="Resource" uid="uid://dq7ntlixgjjp8" path="res://resources/enemies/goblin.tres" id="5_oexds"]
+
+[node name="Node2D" type="Node2D" unique_id=1403287978]
+script = ExtResource("1_e05a3")
+
+[node name="Gladiators" type="Node2D" parent="." unique_id=2048455974]
+position = Vector2(48, 259)
+
+[node name="gladiator" parent="Gladiators" unique_id=764551868 instance=ExtResource("2_7ft05")]
+position = Vector2(23, -15)
+character_data = ExtResource("3_4ag8t")
+
+[node name="gladiator2" parent="Gladiators" unique_id=639986162 instance=ExtResource("2_7ft05")]
+position = Vector2(304, 127)
+
+[node name="Enemies" type="Node2D" parent="." unique_id=1330993968]
+position = Vector2(1119, 260)
+
+[node name="enemy" parent="Enemies" unique_id=115452098 instance=ExtResource("4_dpxgc")]
+enemy_data = ExtResource("5_oexds")
+
+[node name="Battles" type="Node2D" parent="." unique_id=1484306833]

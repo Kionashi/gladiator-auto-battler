@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="GladiatorAutoBattler"
-run/main_scene="uid://fh5qmbxfc2s3"
+run/main_scene="uid://byusjj8xlifna"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 

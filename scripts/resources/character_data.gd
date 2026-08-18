@@ -19,23 +19,6 @@ var health: float = 0: set = _on_health_set
 func _init() -> void:
 	setup_stats.call_deferred()
 
-#func add_buff(buff: StatBuff) ->void:
-	#stat_buffs.append(buff)
-	#apply_buff(buff)
-	#
-#func apply_buff(buff: StatBuff) ->void:
-	#match buff.stat:
-		#"health":
-			#current_max_health = current_max_health + buff.buff_amount
-		#"attack": 
-			#current_attack = current_attack + buff.buff_amount
-		#"defense":
-			#current_defense = current_defense + buff.buff_amount
-		#"attack_speed":
-			#current_attack_speed = current_attack_speed + buff.buff_amount
-		#_:
-			#print("unkown buff")
-	
 func setup_stats() -> void:
 	health = current_max_health
 
